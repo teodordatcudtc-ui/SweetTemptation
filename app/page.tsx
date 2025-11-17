@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section with Floating Pastries */}
-      <section className="relative min-h-[60vh] md:min-h-screen flex items-center justify-center overflow-hidden md:overflow-hidden bg-gradient-to-br from-cream via-cream to-cream/95 pt-8 md:pt-20 pb-0 md:pb-0">
+      <section className="relative min-h-[75vh] md:min-h-screen flex items-center justify-center overflow-hidden md:overflow-hidden bg-gradient-to-br from-cream via-cream to-cream/95 pt-16 md:pt-20 pb-8 md:pb-0">
         {/* Floating Pastries */}
         <FloatingPastry
           src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600"
@@ -63,7 +63,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 md:px-8 animate-fade-in -mt-12 md:mt-0">
           {/* Background overlay pentru lizibilitate */}
-          <div className="absolute inset-0 bg-cream/70 backdrop-blur-sm rounded-2xl md:rounded-3xl -z-10 py-6 md:py-12" />
+          <div className="absolute inset-0 bg-cream/50 backdrop-blur-sm rounded-2xl md:rounded-3xl -z-10 py-6 md:py-12" />
           
           <div className="relative py-6 md:py-12 px-4 md:px-8">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-dark mb-6 animate-slide-up">
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Signature Desserts Section */}
-      <Section className="bg-cream relative z-20 -mt-24 md:mt-0 pt-0 md:pt-16">
+      <Section className="bg-cream relative z-20 -mt-12 md:mt-0 pt-0 md:pt-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-4">
             Deserturi de Semnătură
