@@ -112,7 +112,7 @@ export default function Produse() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-cream/95 to-cream pt-24">
+      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-cream/95 to-cream pt-16 md:pt-24">
         <div className="container-custom text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-dark mb-6 animate-slide-up">
             Produsele Noastre
@@ -124,8 +124,31 @@ export default function Produse() {
       </section>
 
       {/* Category Filter */}
-      <Section className="bg-cream pt-8 pb-4">
-        <div className="flex flex-wrap justify-center gap-4">
+      <Section className="bg-cream pt-4 md:pt-8 pb-4">
+        {/* Carusel pentru mobile, flex-wrap pentru desktop */}
+        <div className="md:hidden">
+          <div className="overflow-x-auto scrollbar-hide -mx-4 px-4">
+            <div className="flex gap-3" style={{ scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}>
+              {categories.map((category) => (
+                <button
+                  key={category.id}
+                  onClick={() => setSelectedCategory(category.id)}
+                  className={`flex-shrink-0 px-4 py-2.5 rounded-full font-medium text-sm transition-all duration-300 whitespace-nowrap ${
+                    selectedCategory === category.id
+                      ? 'bg-dark text-cream shadow-lg scale-105'
+                      : 'bg-cream text-dark border-2 border-dark/20 hover:border-dark/40 hover:scale-105'
+                  }`}
+                  style={{ scrollSnapAlign: 'start' }}
+                >
+                  {category.name}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop filters */}
+        <div className="hidden md:flex flex-wrap justify-center gap-4">
           {categories.map((category) => (
             <button
               key={category.id}
@@ -143,7 +166,7 @@ export default function Produse() {
       </Section>
 
       {/* Products Gallery */}
-      <Section className="bg-cream pt-4">
+      <Section className="bg-cream pt-2 md:pt-4">
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProducts.map((product) => (
