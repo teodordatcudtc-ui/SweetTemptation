@@ -61,11 +61,11 @@ export default function Home() {
         />
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center px-4 md:px-8 animate-fade-in">
+        <div className="relative z-10 text-center px-4 md:px-8 animate-fade-in -mt-12 md:mt-0">
           {/* Background overlay pentru lizibilitate */}
-          <div className="absolute inset-0 bg-cream/70 backdrop-blur-sm rounded-2xl md:rounded-3xl -z-10 py-8 md:py-12" />
+          <div className="absolute inset-0 bg-cream/70 backdrop-blur-sm rounded-2xl md:rounded-3xl -z-10 py-6 md:py-12" />
           
-          <div className="relative py-8 md:py-12 px-4 md:px-8">
+          <div className="relative py-6 md:py-12 px-4 md:px-8">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-dark mb-6 animate-slide-up">
               Sweet Temptations
             </h1>
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Signature Desserts Section */}
-      <Section className="bg-cream -mt-8 md:mt-0 pt-0 md:pt-16">
+      <Section className="bg-cream -mt-16 md:mt-0 pt-0 md:pt-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-4">
             Deserturi de Semnătură
