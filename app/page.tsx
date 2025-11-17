@@ -61,23 +61,28 @@ export default function Home() {
         />
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center px-4 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-dark mb-6 animate-slide-up">
-            Sweet Temptations
-          </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl font-elegant text-dark/80 mb-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Cofetărie Artizanală
-          </p>
-          <p className="text-lg md:text-xl text-dark/70 max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '0.4s' }}>
-            Creăm deserturi rafinate cu pasiune, dedicare și ingrediente de cea mai bună calitate
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            <Button href="/produse" variant="primary">
-              Explorează Produsele
-            </Button>
-            <Button href="/comenzi-personalizate" variant="outline">
-              Comandă Personalizată
-            </Button>
+        <div className="relative z-10 text-center px-4 md:px-8 animate-fade-in">
+          {/* Background overlay pentru lizibilitate */}
+          <div className="absolute inset-0 bg-cream/80 backdrop-blur-sm rounded-2xl md:rounded-3xl -z-10 py-8 md:py-12" />
+          
+          <div className="relative py-8 md:py-12 px-4 md:px-8">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-dark mb-6 animate-slide-up">
+              Sweet Temptations
+            </h1>
+            <p className="text-xl md:text-2xl lg:text-3xl font-elegant text-dark/80 mb-4 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              Cofetărie Artizanală
+            </p>
+            <p className="text-lg md:text-xl text-dark/70 max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+              Creăm deserturi rafinate cu pasiune, dedicare și ingrediente de cea mai bună calitate
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
+              <Button href="/produse" variant="primary">
+                Explorează Produsele
+              </Button>
+              <Button href="/comenzi-personalizate" variant="outline">
+                Comandă Personalizată
+              </Button>
+            </div>
           </div>
         </div>
 
@@ -96,7 +101,64 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Carusel pentru mobile, grid pentru desktop */}
+        <div className="md:hidden">
+          <div className="overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4">
+            <div className="flex gap-6" style={{ scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}>
+              <div className="flex-shrink-0 w-[85vw] max-w-sm" style={{ scrollSnapAlign: 'start' }}>
+                <ProductCard
+                  image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
+                  title="Torturi de Nuntă"
+                  description="Torturi elegante și sofisticate, personalizate pentru momentul tău special"
+                  category="Torturi"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85vw] max-w-sm" style={{ scrollSnapAlign: 'start' }}>
+                <ProductCard
+                  image="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600"
+                  title="Prăjituri Artizanale"
+                  description="Selecție variată de prăjituri create manual cu ingrediente premium"
+                  category="Prăjituri"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85vw] max-w-sm" style={{ scrollSnapAlign: 'start' }}>
+                <ProductCard
+                  image="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600"
+                  title="Macarons Rafinate"
+                  description="Macarons colorate și delicate, perfecte pentru orice ocazie"
+                  category="Macarons"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85vw] max-w-sm" style={{ scrollSnapAlign: 'start' }}>
+                <ProductCard
+                  image="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600"
+                  title="Deserturi Personalizate"
+                  description="Creăm deserturi unice conform preferințelor tale"
+                  category="Personalizate"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85vw] max-w-sm" style={{ scrollSnapAlign: 'start' }}>
+                <ProductCard
+                  image="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=600"
+                  title="Torturi de Aniversare"
+                  description="Torturi festive și colorate pentru a celebra momentele speciale"
+                  category="Torturi"
+                />
+              </div>
+              <div className="flex-shrink-0 w-[85vw] max-w-sm" style={{ scrollSnapAlign: 'start' }}>
+                <ProductCard
+                  image="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=600"
+                  title="Patiserie Artizanală"
+                  description="Produse de patiserie proaspete, zilnic preparate cu pasiune"
+                  category="Patiserie"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Grid pentru desktop */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProductCard
             image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
             title="Torturi de Nuntă"

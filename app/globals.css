@@ -82,6 +82,16 @@ img {
   image-rendering: crisp-edges;
 }
 
+/* Hide scrollbar for carousel */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
 /* Floating animation delay variants */
 .float-delay-1 {
   animation-delay: 0s;
