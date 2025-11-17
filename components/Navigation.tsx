@@ -31,7 +31,7 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'glass-dark shadow-lg py-3'
-          : 'bg-transparent py-5'
+          : 'bg-cream/70 backdrop-blur-sm py-5'
       }`}
     >
       <div className="container-custom">

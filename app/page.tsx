@@ -63,7 +63,7 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 md:px-8 animate-fade-in">
           {/* Background overlay pentru lizibilitate */}
-          <div className="absolute inset-0 bg-cream/80 backdrop-blur-sm rounded-2xl md:rounded-3xl -z-10 py-8 md:py-12" />
+          <div className="absolute inset-0 bg-cream/70 backdrop-blur-sm rounded-2xl md:rounded-3xl -z-10 py-8 md:py-12" />
           
           <div className="relative py-8 md:py-12 px-4 md:px-8">
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-dark mb-6 animate-slide-up">
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Signature Desserts Section */}
-      <Section className="bg-cream">
+      <Section className="bg-cream pt-8 md:pt-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-4">
             Deserturi de Semnătură
