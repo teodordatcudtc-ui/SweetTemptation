@@ -112,19 +112,19 @@ export default function Produse() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[30vh] md:min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-cream/95 to-cream pt-6 md:pt-24 pb-0 md:pb-0">
+      <section className="relative min-h-[25vh] md:min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-cream/95 to-cream pt-4 md:pt-24 pb-0 md:pb-0">
         <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-dark mb-0 md:mb-6 animate-slide-up">
+          <h1 className="text-3xl md:text-6xl lg:text-7xl font-display font-bold text-dark mb-0 md:mb-6 animate-slide-up">
             Produsele Noastre
           </h1>
-          <p className="text-base md:text-2xl text-dark/70 max-w-3xl mx-auto mb-0 md:mb-0 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-sm md:text-2xl text-dark/70 max-w-3xl mx-auto mb-0 md:mb-0 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Descoperă colecția noastră de deserturi rafinate
           </p>
         </div>
       </section>
 
       {/* Category Filter */}
-      <Section className="bg-cream -mt-6 md:mt-0 pt-0 md:pt-8 pb-0 md:pb-4">
+      <Section className="bg-cream -mt-10 md:mt-0 pt-0 md:pt-8 pb-0 md:pb-4">
         {/* Carusel pentru mobile, flex-wrap pentru desktop */}
         <div className="md:hidden">
           <div className="overflow-x-auto scrollbar-hide -mx-4 px-4">
@@ -166,7 +166,7 @@ export default function Produse() {
       </Section>
 
       {/* Products Gallery */}
-      <Section className="bg-cream -mt-2 md:mt-0 pt-0 md:pt-4">
+      <Section className="bg-cream -mt-4 md:mt-0 pt-0 md:pt-4">
         {filteredProducts.length > 0 ? (
           <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {filteredProducts.map((product) => (

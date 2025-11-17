@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Signature Desserts Section */}
-      <Section className="bg-cream -mt-16 md:mt-0 pt-0 md:pt-16">
+      <Section className="bg-cream -mt-32 md:mt-0 pt-0 md:pt-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-4">
             Deserturi de Semnătură
