@@ -48,19 +48,19 @@ export default function ComenziPersonalizate() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-cream/95 to-cream pt-24">
+      <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-cream/95 to-cream pt-8 md:pt-24 pb-4 md:pb-0">
         <div className="container-custom text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-dark mb-6 animate-slide-up">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-dark mb-3 md:mb-6 animate-slide-up">
             Comenzi Personalizate
           </h1>
-          <p className="text-xl md:text-2xl text-dark/70 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg md:text-2xl text-dark/70 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Transformă ideile tale în deserturi de neuitat
           </p>
         </div>
       </section>
 
       {/* Form Section */}
-      <Section className="bg-cream">
+      <Section className="bg-cream pt-0 md:pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Form */}
           <div className="order-2 lg:order-1">
