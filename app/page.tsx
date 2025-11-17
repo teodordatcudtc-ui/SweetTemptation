@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section with Floating Pastries */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-cream via-cream to-cream/95 pt-16 md:pt-20">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-cream via-cream to-cream/95 pt-12 md:pt-20">
         {/* Floating Pastries */}
         <FloatingPastry
           src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600"
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* Signature Desserts Section */}
-      <Section className="bg-cream pt-4 md:pt-16">
+      <Section className="bg-cream pt-2 md:pt-16">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-4">
             Deserturi de Semnătură

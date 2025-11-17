@@ -112,9 +112,9 @@ export default function Produse() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-cream/95 to-cream pt-8 md:pt-24 pb-4 md:pb-0">
+      <section className="relative min-h-[40vh] md:min-h-[60vh] flex items-center justify-center bg-gradient-to-br from-cream via-cream/95 to-cream pt-8 md:pt-24 pb-2 md:pb-0">
         <div className="container-custom text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-dark mb-3 md:mb-6 animate-slide-up">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-dark mb-2 md:mb-6 animate-slide-up">
             Produsele Noastre
           </h1>
           <p className="text-lg md:text-2xl text-dark/70 max-w-3xl mx-auto animate-slide-up" style={{ animationDelay: '0.2s' }}>
@@ -124,7 +124,7 @@ export default function Produse() {
       </section>
 
       {/* Category Filter */}
-      <Section className="bg-cream pt-0 md:pt-8 pb-4">
+      <Section className="bg-cream pt-0 md:pt-8 pb-2 md:pb-4">
         {/* Carusel pentru mobile, flex-wrap pentru desktop */}
         <div className="md:hidden">
           <div className="overflow-x-auto scrollbar-hide -mx-4 px-4">
@@ -166,9 +166,9 @@ export default function Produse() {
       </Section>
 
       {/* Products Gallery */}
-      <Section className="bg-cream pt-2 md:pt-4">
+      <Section className="bg-cream pt-0 md:pt-4">
         {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
             {filteredProducts.map((product) => (
               <ProductCard
                 key={product.id}

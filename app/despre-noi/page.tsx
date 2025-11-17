@@ -31,7 +31,7 @@ export default function DespreNoi() {
       <Section className="bg-cream pt-0 md:pt-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 animate-slide-in-left">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-dark mb-3 md:mb-6">
               Povestea Noastră
             </h2>
             <div className="space-y-4 text-lg text-dark/80 leading-relaxed">
